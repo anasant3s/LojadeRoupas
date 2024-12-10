@@ -1,0 +1,193 @@
+**
+
+/* fonts */
+:root {
+  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway",  sans-serif;
+  --nav-font: "Poppins",  sans-serif;
+}
+
+
+:root { 
+  --background-color:#adadad; /* fundo */
+  --default-color: #383838; /* ??? */
+  --gradiente-dois:#8d8484; /* cor da fonte */
+  --gradiente-um: #444242; /* hover do nav */
+  --surface-color: #939396; /* headder background */
+  --font-color: white;
+  --hover-effect: #a7a4a4; 
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--default-color);
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px;
+  background: linear-gradient(90deg, var(--gradiente-um), var(--gradiente-dois)); /* Gradiente */
+}
+.logo img {
+  max-width:200px;
+  max-height:150px;
+  width: auto;
+  height: auto;
+}
+nav {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os itens do menu */
+ 
+}
+nav a {
+  text-decoration: none;
+  color: var(--font-color); /* Cor dos links */
+  font-weight: bold;
+}
+nav a:hover {
+  color: var(--hover-effect); /* Cor do hover */
+}
+
+/* catalogo */
+.catalogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: #7c7a75;
+}
+
+.item {
+  background-color: #353433;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #f3f3f3;
+}
+
+.produto-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.item h3 {
+  color: #8d8884;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.avaliacao {
+  margin: 10px 0;
+  color: #a0968d;
+}
+
+.btn-carrinho {
+  background-color: #a19992;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-carrinho:hover {
+  background-color: #979695;
+}
+
+/* 2 pt */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: 1px solid var(--default-color);
+  border-radius: 5px;
+  width: 200px;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--hover-effect);
+  color: var(--font-color);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: var(--surface-color);
+}
+
+.filtro-produtos {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.filtro-produtos select {
+  padding: 10px;
+  border: 1px solid var(--default-color);
+  border-radius: 5px;
+  background-color: var(--background-color);
+  color: var(--default-color);
+  font-size: 14px;
+}
+
+footer {
+  background-color: var(--surface-color);
+  padding: 20px 0;
+  text-align: center;
+  color: var(--font-color);
+  margin-top: 20px;
+}
+
+footer .social-media {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+}
+
+footer .social-media li a {
+  color: var(--font-color);
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+footer .social-media li a:hover {
+  color: var(--hover-effect);
+}
+
+.modal .modal-content {
+  background-color: var(--surface-color);
+  color: var(--font-color);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.modal .btn-close {
+  background-color: var(--hover-effect);
+  border: none;
+  color: var(--font-color);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.modal .btn-close:hover {
+  background-color: var(--background-color);
+}
